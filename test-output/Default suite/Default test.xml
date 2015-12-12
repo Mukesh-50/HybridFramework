@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Mukesh" name="UnitTest.TestDataprovider" tests="2" failures="0" timestamp="12 Dec 2015 18:07:35 GMT" time="2.194" errors="0">
+  <testcase name="testConfigReader" time="0.062" classname="UnitTest.TestDataprovider"/>
+  <testcase name="testExcelReader" time="2.094" classname="UnitTest.TestDataprovider"/>
+</testsuite>
