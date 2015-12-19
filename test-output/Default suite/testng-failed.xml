@@ -3,9 +3,11 @@
 <suite verbose="0" name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="false">
     <classes>
-      <class name="UnitTest.TestDataprovider">
+      <class name="TestCases.PublishPost">
         <methods>
-          <include name="testExcelReader"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="VerifyPostPublish"/>
         </methods>
       </class>
     </classes>

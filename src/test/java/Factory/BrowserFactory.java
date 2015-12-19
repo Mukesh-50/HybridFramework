@@ -24,11 +24,14 @@ public class BrowserFactory
 		else if(browsername.equalsIgnoreCase("Chrome"))
 		{
 			
+			System.setProperty("webdriver.chrome.driver", DataProviderFactory.getConfig().getChromeDriverPath());
 			driver=new ChromeDriver();
 			driver.manage().window().maximize();
 		}
 		else if(browsername.equalsIgnoreCase("IE"))
 		{
+		
+			System.setProperty("webdriver.ie.driver", DataProviderFactory.getConfig().getIEDriverPath());
 			driver=new InternetExplorerDriver();
 			driver.manage().window().maximize();
 		}

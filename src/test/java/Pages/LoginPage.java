@@ -48,6 +48,7 @@ public class LoginPage
 	
 	public void clickLoginButton(){
 		login_button.click();
+		
 	}
 	
 	public void verifyPageTitle()
@@ -64,5 +65,7 @@ public class LoginPage
 		password.sendKeys(pass);
 		login_button.click();
 	}
+	
+
 	
 }

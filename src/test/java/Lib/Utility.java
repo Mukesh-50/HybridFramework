@@ -10,21 +10,8 @@ import org.openqa.selenium.WebDriver;
 
 public class Utility 
 {
-    
-	
-	
-	public boolean loginToApplication()
-	{
-		
-		return true;
-	}
-	
-	public void logout()
-	{
-		
-	}
-	
-	public static void captureScreenshot(WebDriver ldriver,String screenshot_name)
+    	
+	public static String captureScreenshot(WebDriver ldriver,String screenshot_name)
 	{
 		
 		
@@ -33,16 +20,19 @@ public class Utility
 		// it will store screenshot in memory
 	    File src=screenshot.getScreenshotAs(OutputType.FILE);
 		
-		
+		String path="C:\\LatestSeleniumDrivers\\"+screenshot_name+".png";
+	    
 	    try 
 	    {
-			FileUtils.copyFile(src, new File("C:\\LatestSeleniumDrivers\\"+screenshot_name+".png"));
+			FileUtils.copyFile(src, new File(path));
 		} 
 	    catch (IOException e) 
 	    {
 		
 	    	System.out.println("Unable to capture screeshot "+e.getMessage());
 		}
+	    
+	    return path;
 		
 	}
 	
