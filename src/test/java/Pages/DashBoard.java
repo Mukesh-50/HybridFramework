@@ -16,7 +16,7 @@ public class DashBoard
 	
 	public void verifyHomeTitle()
 	{
-		Assert.assertTrue(driver.getTitle().contains("Mukesh"));
+		Assert.assertTrue(driver.getTitle().contains("Dashboard"));
 	}
 	
 	
