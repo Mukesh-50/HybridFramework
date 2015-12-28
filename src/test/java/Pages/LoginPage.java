@@ -2,6 +2,7 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -17,7 +18,7 @@ public class LoginPage
 		this.driver=ldriver;
 	}
 	
-	
+	//WebDriver driver=new FirefoxDriver();
 	
 	//@FindBy(id="user_login") 
 	@FindBy(how=How.ID,using="user_login") 
@@ -59,8 +60,8 @@ public class LoginPage
 	
 	public void login_Wordpress(String uname,String pass)
 	{
-		System.out.println(driver.getTitle());
-		Assert.assertTrue(driver.getTitle().contains("WordPress"));
+		//System.out.println(driver.getTitle());
+		//Assert.assertTrue(driver.getTitle().contains("WordPress"));
 		username.sendKeys(uname);	
 		password.sendKeys(pass);
 		login_button.click();

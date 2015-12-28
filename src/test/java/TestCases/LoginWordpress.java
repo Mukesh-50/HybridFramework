@@ -50,8 +50,9 @@ public class LoginWordpress
 	  logger.log(LogStatus.INFO, "Application loaded");
 	
 	  // Initialize page object elements  
-	   LoginPage login=PageFactory.initElements(driver, LoginPage.class);
-	  
+	  // LoginPage login=PageFactory.initElements(driver, LoginPage.class);
+	 
+	   LoginPage login=new LoginPage(driver);
 	   
 	   login.login_Wordpress(DataProviderFactory.getExcel().getStringData(0, 0, 0),DataProviderFactory.getExcel().getStringData(0, 0, 1));
 	   logger.log(LogStatus.PASS, "Able to login Successfully");
